@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Artigos de Leandro Manique sobre outbound B2B, IA aplicada a vendas, prospecção automatizada e operações enxutas com IA como co-fundador técnico.">
+<meta name="author" content="Leandro Manique">
+<meta name="robots" content="index, follow">
+<title>Artigos. Leandro Manique (ZEITH Co.)</title>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="canonical" href="https://leandromanique.com/artigos">
+
+<meta property="og:title" content="Artigos. Leandro Manique (ZEITH Co.)">
+<meta property="og:description" content="Análises sobre outbound B2B, IA aplicada a vendas e operações enxutas. Por Leandro Manique, founder ZEITH Co.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://leandromanique.com/artigos">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:image" content="https://leandromanique.com/imagens/leandro-canonica.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "@id": "https://leandromanique.com/artigos#blog",
+  "url": "https://leandromanique.com/artigos",
+  "name": "Artigos. Leandro Manique",
+  "description": "Análises sobre outbound B2B, IA aplicada a vendas e operações enxutas.",
+  "author": { "@type": "Person", "@id": "https://leandromanique.com/#person", "name": "Leandro Manique" },
+  "publisher": { "@type": "Person", "@id": "https://leandromanique.com/#person", "name": "Leandro Manique" },
+  "inLanguage": "pt-BR"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Space+Grotesk:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #0a0e14;
+    --bg-card: #0f1318;
+    --bg-card-hover: #131820;
+    --text-primary: #f0ede8;
+    --text-secondary: #8a8d94;
+    --text-muted: #4a4d54;
+    --accent: #4B69A6;
+    --accent-bright: #6486C7;
+    --border: #1c2028;
+    --border-hover: #252b35;
+    --font-display: 'Space Grotesk', -apple-system, sans-serif;
+    --font-body: 'DM Sans', -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { font-size: 16px; -webkit-font-smoothing: antialiased; scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  ::selection { background: var(--accent); color: #fff; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    padding: 1.25rem 2rem;
+    display: flex; justify-content: space-between; align-items: center;
+    background: rgba(10, 14, 20, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-brand { display: flex; align-items: center; gap: 0.6rem; }
+  .nav-logo {
+    font-family: var(--font-mono); font-size: 0.9rem; font-weight: 500;
+    letter-spacing: 0.15em; color: var(--text-primary); text-decoration: none;
+  }
+  .nav-logo span { color: var(--accent); }
+  .nav-section {
+    font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.08em;
+    color: var(--accent); text-decoration: none;
+  }
+  .nav-cta {
+    font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.1em;
+    color: #fff; background: var(--accent);
+    padding: 0.55rem 1.25rem; text-decoration: none;
+    text-transform: uppercase; transition: opacity 0.2s, transform 0.15s;
+  }
+  .nav-cta:hover { opacity: 0.85; transform: translateY(-1px); }
+
+  main {
+    max-width: 760px; margin: 0 auto;
+    padding: 8rem 2rem 4rem;
+  }
+
+  .header { margin-bottom: 4rem; }
+  .label {
+    font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.25em;
+    color: var(--text-muted); text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    display: flex; align-items: center; gap: 1rem;
+  }
+  .label::before {
+    content: ''; display: block; width: 24px; height: 1px;
+    background: var(--accent);
+  }
+  h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4.5vw, 3rem);
+    font-weight: 600; line-height: 1.05; letter-spacing: -0.03em;
+    margin-bottom: 1.25rem;
+  }
+  .lead {
+    font-size: 1rem; font-weight: 300;
+    color: var(--text-secondary); line-height: 1.7;
+    max-width: 600px;
+  }
+
+  .posts-list {
+    list-style: none;
+    border-top: 1px solid var(--border);
+  }
+  .post-item {
+    display: block;
+    padding: 1.75rem 0;
+    border-bottom: 1px solid var(--border);
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.2s;
+  }
+  .post-item:hover { background: var(--bg-card); text-decoration: none; }
+  .post-item-meta {
+    font-family: var(--font-mono); font-size: 0.7rem;
+    letter-spacing: 0.12em; color: var(--text-muted);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+  .post-item-title {
+    font-family: var(--font-display); font-size: 1.4rem;
+    font-weight: 500; color: var(--text-primary);
+    margin-bottom: 0.5rem; letter-spacing: -0.02em;
+    line-height: 1.25;
+  }
+  .post-item:hover .post-item-title { color: var(--accent-bright); }
+  .post-item-excerpt {
+    font-size: 0.95rem; font-weight: 300;
+    color: var(--text-secondary); line-height: 1.6;
+  }
+
+  .empty, .error {
+    padding: 3rem 0;
+    text-align: center;
+    color: var(--text-muted);
+    font-style: italic;
+  }
+
+  footer {
+    max-width: 760px; margin: 0 auto;
+    padding: 3rem 2rem 4rem;
+    border-top: 1px solid var(--border);
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem;
+    font-family: var(--font-mono); font-size: 0.7rem;
+    letter-spacing: 0.08em; color: var(--text-muted);
+  }
+  footer a { color: var(--text-muted); text-decoration: none; }
+  footer a:hover { color: var(--text-primary); }
+
+  body::after {
+    content: ''; position: fixed; top: 0; left: 0;
+    width: 100%; height: 100%; pointer-events: none; z-index: 1000;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  }
+
+  @media (max-width: 768px) {
+    nav { padding: 1rem 1.25rem; }
+    .nav-section { display: none; }
+    main { padding: 6rem 1.25rem 3rem; }
+    h1 { font-size: 2rem; }
+    .post-item-title { font-size: 1.2rem; }
+    footer { padding: 2rem 1.25rem 3rem; flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">
+    <a href="/" class="nav-logo">LEANDRO<span>.</span>MANIQUE</a>
+    <a href="/artigos" class="nav-section">/artigos</a>
+  </div>
+  <a href="mailto:leandro@zeithco.com" class="nav-cta">Falar comigo</a>
+</nav>
+
+<main>
+  <div class="header">
+    <div class="label">Artigos</div>
+    <h1>Análises sobre outbound, IA aplicada e operações enxutas.</h1>
+    <p class="lead">
+      Tese aplicada da operação ZEITH. Cada artigo valida ou refuta uma hipótese real do produto. Não é conteúdo de marketing. É registro de aprendizado.
+    </p>
+  </div>
+
+  <ul class="posts-list" id="posts-list">
+    <li class="empty" id="loading">Carregando artigos.</li>
+  </ul>
+</main>
+
+<footer>
+  <div>© 2026 Leandro Manique · ZEITH Co. · Santa Cruz do Sul, RS</div>
+  <div>
+    <a href="/">Home</a> · <a href="https://zeithco.com">zeithco.com</a> · <a href="mailto:leandro@zeithco.com">leandro@zeithco.com</a>
+  </div>
+</footer>
+
+<script>
+  function formatDate(iso) {
+    const d = new Date(iso + 'T12:00:00');
+    return d.toLocaleDateString('pt-BR', { year: 'numeric', month: 'long', day: 'numeric' });
+  }
+
+  function buildPostItem(post) {
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = '/artigos/' + post.slug;
+    a.className = 'post-item';
+
+    const meta = document.createElement('div');
+    meta.className = 'post-item-meta';
+    meta.textContent = formatDate(post.date);
+
+    const title = document.createElement('div');
+    title.className = 'post-item-title';
+    title.textContent = post.title;
+
+    const excerpt = document.createElement('div');
+    excerpt.className = 'post-item-excerpt';
+    excerpt.textContent = post.excerpt;
+
+    a.appendChild(meta);
+    a.appendChild(title);
+    a.appendChild(excerpt);
+    li.appendChild(a);
+    return li;
+  }
+
+  function showEmpty(msg) {
+    const list = document.getElementById('posts-list');
+    while (list.firstChild) list.removeChild(list.firstChild);
+    const li = document.createElement('li');
+    li.className = 'empty';
+    li.textContent = msg;
+    list.appendChild(li);
+  }
+
+  fetch('/artigos/posts.json')
+    .then(r => r.json())
+    .then(posts => {
+      const list = document.getElementById('posts-list');
+      while (list.firstChild) list.removeChild(list.firstChild);
+      const sorted = [...posts].sort((a, b) => b.date.localeCompare(a.date));
+      if (sorted.length === 0) {
+        showEmpty('Nenhum artigo ainda. Em breve.');
+        return;
+      }
+      sorted.forEach(p => list.appendChild(buildPostItem(p)));
+    })
+    .catch(err => {
+      console.error('Erro ao carregar artigos:', err);
+      showEmpty('Erro ao carregar artigos. Recarregue a página.');
+    });
+</script>
+
+</body>
+</html>
