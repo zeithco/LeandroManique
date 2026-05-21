@@ -1,4 +1,36 @@
-# leandromanique.com
+## Leandro Manique
+
+Founder [ZEITH Co.](https://zeithco.com) (2018) e high-impact individual contributor. Opero como one-person business apoiado por IA como co-fundador técnico.
+
+### A tese
+
+A ZEITH é um sistema vivo de Eficiência Inteligente para Negócios. Lê o mercado, mapeia atritos e transforma mudança em eficiência aplicada. O nome vem de Zeitgeist, o espírito do tempo.
+
+### Hoje em 3 frentes
+
+- **Aquisição.** Zeith Outbound, Sistema de Aquisição B2B automatizado
+- **Presença.** ZEITH Showcase, presença canônica em IAs generativas e Google
+- **Reputação.** ZeithBoost, SaaS internacional de inteligência de reputação local
+
+Amanhã podem ser outros produtos. A tese continua a mesma.
+
+### Trajetória
+
+- 2009, início em marketing e negócios no Brasil
+- 2011 a 2018, passagem pela Sanofi (multinacional farmacêutica)
+- 2012 a hoje, mais de 50 projetos próprios de consultoria em marketing, branding e estratégia
+- 2018, fundação da ZEITH Co.
+
+### Atuação
+
+Remota no Brasil e em mercados internacionais. Base em Santa Cruz do Sul, RS.
+
+### Contato
+
+- Site pessoal: [leandromanique.com](https://leandromanique.com)
+- Empresa: [zeithco.com](https://zeithco.com)
+- LinkedIn: [/in/leandromanique](https://linkedin.com/in/leandromanique)
+- E-mail: leandro@zeithco.com
 
 Landing pessoal canônica de Leandro Manique, founder da ZEITH Co. + área de artigos. HTML estático, zero build, zero framework.
 
