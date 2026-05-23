@@ -3,17 +3,23 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://leandromanique.com/</loc>
-    <lastmod>2026-05-14</lastmod>
+    <lastmod>2026-05-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://leandromanique.com/imagens/leandro-canonica.png</image:loc>
       <image:title>Leandro Manique, founder da ZEITH Co.</image:title>
-      <image:caption>Retrato oficial de Leandro Manique, founder da ZEITH Co., em Santa Cruz do Sul, RS, Brasil.</image:caption>
+      <image:caption>Retrato oficial de Leandro Manique, founder da ZEITH Co., high-impact individual contributor B2B com atuação remota Brasil e mercados internacionais.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://commons.wikimedia.org/wiki/Special:FilePath/Leandro_Manique_founder_ZEITH_Co_2026.jpg</image:loc>
+      <image:title>Leandro Manique founder ZEITH Co 2026</image:title>
+      <image:caption>Foto canônica de Leandro Manique no Wikimedia Commons, licenciada CC BY-SA 4.0, vinculada a Wikidata Q139794901.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://leandromanique.com/imagens/leandro-palestrando.png</image:loc>
-      <image:title>Leandro Manique em palestra sobre marketing e IA</image:title>
+      <image:title>Leandro Manique em palestra sobre marketing B2B e IA aplicada</image:title>
+      <image:caption>Leandro Manique em palestra sobre marketing B2B, branding e inteligência artificial aplicada a negócios.</image:caption>
     </image:image>
   </url>
   <url>
